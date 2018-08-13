@@ -9,6 +9,24 @@
 
 2. Run composer require huynt57/david-package:dev-master
 
-3. Run php artisan davidbase:install
+3. Update App/User.php use UserTrait
 
-4. Run php artisan make:auth
+    <?php
+
+    namespace App;
+
+    use DavidBase\UserTrait;
+    ...
+
+    class User extends Authenticatable
+    {
+        use Notifiable;
+        use UserTrait;
+        
+        ...
+    }
+   
+
+4. Run php artisan davidbase:install
+
+5. Run php artisan make:auth
