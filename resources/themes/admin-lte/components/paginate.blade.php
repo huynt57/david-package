@@ -1,0 +1,1 @@
+{{ $collection->appends(request()->all())->links() }}

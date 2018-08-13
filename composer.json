@@ -1,0 +1,33 @@
+{
+  "name": "tungdavid/base",
+  "description": "Laravel base package on project",
+  "authors": [
+    {
+      "name": "Luu Thanh Tung",
+      "email": "david.tunglt@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "igaster/laravel-theme": "^2.0",
+    "laracasts/flash": "^3.0",
+    "laravel/socialite": "^3.0",
+    "lavary/laravel-menu": "^1.7",
+    "maatwebsite/excel": "^3.0",
+    "ndnam90/laravel-filterable": "^1.0",
+    "spatie/laravel-activitylog": "^2.0",
+    "spatie/laravel-permission": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "DavidBase\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DavidBase\\ServiceProvider"
+      ]
+    }
+  }
+}
