@@ -1,23 +1,33 @@
-1. Update file composer.json
+# User Role Permission
 
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/huynt57/david-package"
-        }
-    ],
+[![N|Solid](http://ishopgo.com/isg/img/logo.png)](http://ishopgo.com/)
 
-2. Run composer require huynt57/david-package:dev-master
+### Installation
 
-3. Update App/User.php use UserTrait
+Update file composer.json
 
-    <?php
+```sh
+"repositories": [
+    {
+        "type": "git",
+        "url": "https://github.com/huynt57/david-package"
+    }
+],
+```
 
+Run composer require
+
+```sh
+composer require huynt57/david-package:dev-master
+```
+
+Add UserTrait.php to App/User.php
+```sh
+<?php
     namespace App;
-
+    
     use DavidBase\UserTrait;
     ...
-
     class User extends Authenticatable
     {
         use Notifiable;
@@ -25,8 +35,21 @@
         
         ...
     }
-   
+```
 
-4. Run php artisan davidbase:install
+Run artisan
 
-5. Run php artisan make:auth
+```sh
+php artisan davidbase:install
+php artisan make:auth
+```
+
+
+
+License
+----
+
+IshopGo Dev Team 2018
+
+
+**IshopGo VietNam**
