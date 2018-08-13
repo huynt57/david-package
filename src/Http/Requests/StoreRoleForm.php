@@ -12,7 +12,7 @@ class StoreRoleForm extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->can('manage-roles');
+        //return $this->user()->can('manage-roles');
     }
 
     /**
