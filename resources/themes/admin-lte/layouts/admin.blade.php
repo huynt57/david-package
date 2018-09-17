@@ -40,9 +40,6 @@
     </div>
     <footer class="main-footer">
         <strong>Copyright &copy; 2018.</strong>
-        <?php
-            echo shell_exec("git branch -v");
-        ?>
         <div class="pull-right hidden-xs">Phát triển từ <a href="https://www.facebook.com/tunglt.david1508" target="_blank">david.tunglt</a></div>
     </footer>
 </div>
