@@ -41,7 +41,7 @@
     <footer class="main-footer">
         <strong>Copyright &copy; 2018.</strong>
         <?php
-            shell_exec("git log -1 --pretty=format:'%h - %s (%ci)' --abbrev-commit");
+            echo shell_exec("git log -1 --pretty=format:'%h - %s (%ci)' --abbrev-commit");
         ?>
         <div class="pull-right hidden-xs">Phát triển từ <a href="https://www.facebook.com/tunglt.david1508" target="_blank">david.tunglt</a></div>
     </footer>
